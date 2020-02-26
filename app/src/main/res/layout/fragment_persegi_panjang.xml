@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+>
+<androidx.constraintlayout.widget.ConstraintLayout    android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".PersegiPanjang">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/PanjangPersegi"
+            android:hint="Panjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LebarPersegi"
+            android:hint="Lebar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PanjangPersegi"
+            android:layout_marginTop="16dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hitung"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/LebarPersegi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:id="@+id/HitungNilaiPersegi"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LuasPersegi"
+            android:text="Luas = "
+            app:layout_constraintTop_toBottomOf="@+id/HitungNilaiPersegi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Keliling"
+            android:text="Keliling = "
+            app:layout_constraintTop_toBottomOf="@+id/LuasPersegi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NilaiLuasPersegi"
+
+            app:layout_constraintTop_toBottomOf="@+id/HitungNilaiPersegi"
+            app:layout_constraintStart_toEndOf="@+id/LuasPersegi"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NilaiKelilingPersegi"
+
+            app:layout_constraintTop_toBottomOf="@+id/NilaiLuasPersegi"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/Keliling"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/Keliling"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:id="@+id/ShareButtonPersegi"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/praAssesment">
+
+    <fragment android:id="@+id/praAssesment" android:name="org.d3ifcool1023.praassesment.PraAssesment"
+              android:label="Pra Assesment" tools:layout="@layout/fragment_pra_assesment">
+        <action android:id="@+id/action_praAssesment_to_persegiPanjang" app:destination="@id/persegiPanjang"/>
+        <action android:id="@+id/action_praAssesment_to_segitigaSiku" app:destination="@id/segitigaSiku"/>
+        <action android:id="@+id/action_praAssesment_to_about" app:destination="@id/about"/>
+    </fragment>
+    <fragment android:id="@+id/about" android:name="org.d3ifcool1023.praassesment.About" android:label="About"
+              tools:layout="@layout/fragment_about"/>
+    <fragment android:id="@+id/persegiPanjang" android:name="org.d3ifcool1023.praassesment.PersegiPanjang"
+              android:label="Persegi Panjang" tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment android:id="@+id/segitigaSiku" android:name="org.d3ifcool1023.praassesment.SegitigaSiku"
+              android:label="Segitiga Siku Siku" tools:layout="@layout/fragment_segitiga_siku"/>
+</navigation>
